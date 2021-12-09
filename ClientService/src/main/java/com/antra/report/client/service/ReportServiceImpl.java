@@ -75,7 +75,7 @@ public class ReportServiceImpl implements ReportService {
         sendDirectRequests(request);
         return new ReportVO(reportRequestRepo.findById(request.getReqId()).orElseThrow());
     }
-    
+
     private void sendDirectRequests(ReportRequest request) {
         RestTemplate rs = new RestTemplate();
         ExcelResponse excelResponse = new ExcelResponse();
