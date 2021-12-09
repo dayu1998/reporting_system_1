@@ -30,7 +30,6 @@ public class ExcelSNSRequest {
                 '}';
     }
 }
-
 class SNSMessageDeserializer extends JsonDeserializer<ExcelRequest> {
     @Override
     public ExcelRequest deserialize(JsonParser p, DeserializationContext ctxt)

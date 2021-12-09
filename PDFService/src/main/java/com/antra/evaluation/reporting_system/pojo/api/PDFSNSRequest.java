@@ -31,7 +31,6 @@ public class PDFSNSRequest {
     }
 
 }
-
 class SNSMessageDeserializer extends JsonDeserializer<PDFRequest> {
     @Override
     public PDFRequest deserialize(JsonParser p, DeserializationContext ctxt)
